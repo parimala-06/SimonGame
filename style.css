@@ -30,6 +30,8 @@ h1{
 button{
     width: 200px;
     height: 200px;
+    border:3px blueviolet solid;
+    border-radius: 5%;
 }
 
 #b1{
@@ -37,6 +39,7 @@ button{
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end:2;
+    background-color: rgb(17, 134, 252);
 }
 
 #b2{
@@ -44,6 +47,7 @@ button{
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end:2;
+    background-color: rgb(255, 0, 170);
 }
 
 #b3{
@@ -51,6 +55,8 @@ button{
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end:3;
+    background-color: rgb(255, 123, 0);
+    
 }
 
 #b4{
@@ -58,6 +64,8 @@ button{
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end:3;
+    background-color: rgb(1, 203, 1);
+
 }
 
 h6{
