@@ -6,3 +6,11 @@ function EventSequence(){
     var gameSeq = [];
     gameSeq.push(randomcolor);
 }
+
+function sound(){
+    
+}
+$("button").click(function(event){
+    $(event.target).fadeOut(100).fadeIn(100); // only attributes with numeric definitions can be added to animate function
+    
+});
