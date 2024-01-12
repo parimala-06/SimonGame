@@ -1,12 +1,8 @@
-var button = document.querySelectorAll
-function sound(button){
-    switch (button) {
-        case 1:
-            var b1 = new Audio("blue.mp3");
-            b1.play(); 
-            break;
-    
-        default:
-            break;
-    }
+
+function EventSequence(){
+    var randomNo = Math.floor(Math.random()*3) + 1;
+    var colors = ["blue","pink", "orange", "green"];
+    var randomcolor = colors[randomNo];
+    var gameSeq = [];
+    gameSeq.push(randomcolor);
 }
