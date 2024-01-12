@@ -1,16 +1,22 @@
+var colors = ["blue","pink", "orange", "green"];
+var gameSeq = [];
 
 function EventSequence(){
-    var randomNo = Math.floor(Math.random()*3) + 1;
-    var colors = ["blue","pink", "orange", "green"];
+  
+    var randomNo = Math.floor(Math.random()*4);
     var randomcolor = colors[randomNo];
-    var gameSeq = [];
     gameSeq.push(randomcolor);
+    console.log(randomcolor);
+    console.log(randomNo);
+    var y = randomNo +1;
+    console.log(y);
+
+    $("#b"+randomNo+1).click(function(){
+        var x = "sounds/" + randomcolor + ".mp3";
+        console.log(x);
+        var sound = new Audio();
+        sound.play();
+    });   
 }
 
-function sound(){
-    
-}
-$("button").click(function(event){
-    $(event.target).fadeOut(100).fadeIn(100); // only attributes with numeric definitions can be added to animate function
-    
-});
+EventSequence();
