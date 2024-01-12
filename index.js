@@ -1,4 +1,4 @@
-var buttonColours = ["blue", "green", "orange", "pink"];
+var buttonColours = ["green", "pink", "orange", "blue"];
 
 var gamePattern = [];
 var userClickedPattern = [];
@@ -67,7 +67,7 @@ function animatePress(currentColor) {
 }
 
 function playSound(name) {
-  var audio = new Audio("sounds/b" + name + ".mp3");
+  var audio = new Audio("sounds/" + name + ".mp3");
   audio.play();
 }
 
@@ -75,12 +75,4 @@ function startOver() {
   level = 0;
   gamePattern = [];
   started = false;
-}
-
-
-EventSequence();
-
-function sound(randomChosenColour){
-    var audio = new Audio("sounds/b" + randomChosenColour + ".mp3");
-    audio.play();
 }
